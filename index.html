@@ -45,19 +45,6 @@
       a { color: var(--teal-dark); }
       :focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
 
-      /* ---------- draft status bar ---------- */
-      .draft-bar {
-        background: var(--ink);
-        color: #fff;
-        text-align: center;
-        font-size: 12.5px;
-        font-weight: 600;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        padding: 9px 16px;
-      }
-      .draft-bar span { color: var(--teal); }
-
       /* ---------- hardwood court backdrop (real court photo, washed out for legibility) ---------- */
       .court-bg {
         position: fixed;
@@ -346,19 +333,6 @@
         #signup { padding: 36px 16px 40px; border-radius: 14px; }
       }
 
-      /* ---------- launch blockers ---------- */
-      .blockers {
-        margin: 54px 0 0;
-        border: 2px dashed var(--ink);
-        border-radius: 14px;
-        padding: 24px 22px;
-      }
-      .blockers h2 { font-size: 21px; font-weight: 700; }
-      .blockers .sub { color: var(--ink-soft); margin-top: 6px; font-size: 15.5px; }
-      .blockers ul { margin: 16px 0 0; padding-left: 22px; }
-      .blockers li { margin-top: 10px; }
-      .blockers li strong { font-weight: 700; }
-
       /* ---------- footer ---------- */
       footer { margin-top: 56px; border-top: 3px solid var(--teal); padding: 26px 0 40px; }
       .foot-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
@@ -385,8 +359,6 @@
   <body>
     <!-- decorative hardwood court photo backdrop -->
     <div class="court-bg" aria-hidden="true"></div>
-
-    <div class="draft-bar">Draft preview <span>·</span> Pending final sign-off <span>·</span> Not live</div>
 
     <!-- ============ HERO: montage v11 ============ -->
     <header class="hero wrap">
@@ -537,18 +509,6 @@
           </div>
         </div>
       </section>
-
-      <!-- ============ LAUNCH BLOCKERS ============ -->
-      <aside class="blockers" aria-labelledby="blockers-title">
-        <h2 id="blockers-title">Before this page can go live</h2>
-        <p class="sub">Flagged for review — these block the launch, not this build:</p>
-        <ul>
-          <li><strong>Form destination (Decision #3) is resolved.</strong> Submissions go to the Opal Basketball inbox. One step remains before the form can receive inquiries: the one-time activation tap on the link FormSubmit emailed to that inbox.</li>
-          <li><strong>How families book today is still open.</strong> This page is built around the decided first step — direct membership inquiry — until that's confirmed.</li>
-          <li><strong>Sticker QR codes are still draft.</strong> Once this page has its live URL, the QR must be regenerated from it and all four stickers re-checked before anything goes to print.</li>
-          <li><strong>Sign-off gate.</strong> Nothing is published until final sign-off is complete.</li>
-        </ul>
-      </aside>
     </main>
 
     <!-- ============ FOOTER ============ -->
